@@ -1,6 +1,7 @@
 import { useState } from "react";
 import reactLogo from "../assets/react.svg";
 import viteLogo from "/vite.svg";
+import { Link } from "react-router-dom";
 
 export default function Home() {
     const [count, setCount] = useState(0);
@@ -34,7 +35,9 @@ export default function Home() {
             <h1 className="text-3xl font-bold underline text-yellow-200">
                 Hello world
             </h1>
-            <button className="btn btn-primary">daisyUI Button</button>
+            <Link to="/test" className="btn btn-primary">
+                test test test
+            </Link>
         </>
     );
 

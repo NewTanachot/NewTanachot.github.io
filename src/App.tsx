@@ -1,14 +1,5 @@
-import { Route, Routes } from "react-router-dom";
-import Home from "./components/home";
-import Test from "./components/test";
+import MapRoutes from "./routes/route";
 
-function App() {
-    return (
-        <Routes>
-            <Route path="/" element={<Home></Home>}></Route>
-            <Route path="/test" element={<Test></Test>}></Route>
-        </Routes>
-    );
+export default function App() {
+    return <MapRoutes></MapRoutes>;
 }
-
-export default App;
